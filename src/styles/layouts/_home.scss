@@ -4,15 +4,22 @@
   background-color: $color-secondary;
 }
 
-$height-mobile: 650px;
+$height-mobile: 600px;
 $height-desktop: 400px;
 $font-size-mobile: 80px;
+$font-size-desktop: 60px;
+$font-size-mobile-subtitle: 35px;
+$font-size-desktop-subtitle: 40px;
 
 .header__img {
-  height: $height-mobile;
+  max-height: $height-mobile;
   width: 100%;
   object-fit: cover;
   opacity: 0.9;
+
+  @media (min-width: $desktop-min-width) {
+    max-height: $height-desktop;
+  }
 }
 
 .header__text {
@@ -21,11 +28,19 @@ $font-size-mobile: 80px;
   top: calc($height-mobile / 2 - $font-size-mobile / 2);
   text-align: center;
 
+  @media (min-width: $desktop-min-width) {
+    top: calc($height-desktop / 2 - $font-size-desktop/ 2);
+  }
+
   .header__text--title {
     margin-block-start: 0;
     margin-block-end: 0;
     font-size: $font-size-mobile;
     color: white;
+
+    @media (min-width: $desktop-min-width) {
+      font-size: $font-size-desktop;
+    }
   }
 
   .header__text--subtitle {
