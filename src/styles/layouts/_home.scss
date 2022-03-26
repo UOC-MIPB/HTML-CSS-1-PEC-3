@@ -1,5 +1,4 @@
 .home {
-  padding-bottom: 100px;
   text-align: center;
   font-family: $font-family-roboto;
   background-color: $color-secondary;
@@ -38,14 +37,11 @@ $font-size-mobile: 80px;
 }
 
 .home__presentation {
-  padding-top: 30px;
-  padding-right: 100px;
-  padding-left: 100px;
-
+  padding: 30px 100px 100px;
   $text-color: black;
 
   .home__presentation--title {
-    font-size: 15px;
+    font-size: 20px;
     font-style: italic;
     margin-bottom: 50px;
     margin-top: 30px;
@@ -54,7 +50,45 @@ $font-size-mobile: 80px;
 
   .home__presentation--text {
     text-align: justify;
-    font-size: 13px;
+    font-size: 15px;
     color: $text-color;
   }
+}
+
+.navigation-block {
+  box-sizing: content-box;
+  position: relative;
+  margin: 0;
+  border-width: 2px;
+  border-style: solid;
+  border-color: $color-tertiary;
+  .navigation-block__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.6;
+  }
+
+  $title-size: 70px;
+
+  .navigation-block__title {
+    width: 100%;
+    position: absolute;
+    top: calc(50% - $title-size * 1.5);
+    text-align: center;
+
+    .navigation-block__title--text {
+      font-size: $title-size;
+    }
+  }
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+}
+
+a:hover {
+  cursor: pointer;
 }
