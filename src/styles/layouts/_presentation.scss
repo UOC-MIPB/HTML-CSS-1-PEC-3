@@ -1,0 +1,20 @@
+.presentation-body {
+  padding: 50px;
+  text-align: justify;
+}
+
+$img-size: 200px;
+.presentation-image {
+  width: $img-size;
+  height: $img-size;
+  border-radius: calc($img-size/2);
+  object-fit: cover;
+}
+
+.presentation-header {
+  text-align: left;
+}
+
+.presentation-text {
+  font-size: 17px;
+}

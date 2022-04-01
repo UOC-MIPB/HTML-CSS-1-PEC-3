@@ -1,7 +1,11 @@
 @import "_variables";
 
 @import "./layouts/home";
+@import "./layouts/presentation";
+@import "./layouts/categories";
 
 body {
   margin: 0;
+  background-color: $color-secondary;
+  font-family: $font-family-roboto;
 }
