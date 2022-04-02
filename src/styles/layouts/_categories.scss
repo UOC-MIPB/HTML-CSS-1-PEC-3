@@ -1,0 +1,27 @@
+.categories-body {
+  padding: 20px 40px 40px;
+}
+
+.categories-nav {
+  display: flex;
+  flex-direction: column;
+  .categories-link {
+    // width: 100%;
+    margin-top: 10px;
+    padding: 15px 30px;
+    border-radius: 10px;
+    background-color: $color-primary;
+    box-shadow: 1px 1px 6px black;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+
+    .categories-link:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+.back-to-menu-categories {
+  margin-top: 20px;
+}
