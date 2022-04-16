@@ -4,9 +4,13 @@
 @import "./layouts/presentation";
 @import "./layouts/categories";
 @import "./layouts/detail";
+@import "./layouts/footer";
+@import "./layouts/header";
 
 body {
   margin: 0;
   background-color: $color-secondary;
   font-family: $font-family-roboto;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
