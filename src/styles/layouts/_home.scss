@@ -14,6 +14,7 @@ $font-size-desktop-subtitle: 30px;
   width: 100%;
   object-fit: cover;
   opacity: 0.9;
+  clip-path: ellipse(100% 80% at 2% 10%);
 
   @media (min-width: $desktop-min-width) {
     height: $height-desktop;
