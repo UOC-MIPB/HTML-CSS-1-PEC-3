@@ -18,3 +18,16 @@ $img-size: 200px;
 .presentation-text {
   font-size: 17px;
 }
+
+#fade-in-img {
+  animation: fadeIn 2s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
