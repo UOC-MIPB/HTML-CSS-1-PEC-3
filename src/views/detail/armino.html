@@ -33,11 +33,25 @@
         su mecenas.
       </p>
       <figure class="detail-figure">
-        <img
-          src="../../assets/images/mujer-armiño.jpg"
-          class="detail-img"
-          alt="La Dama del armiño"
-        />
+        <picture>
+          <source
+            media="(max-width: 768px)"
+            srcset="../../assets/images/mujer-armiño-mobile.jpg"
+          />
+          <source
+            media="(min-width: 769px) and (max-width: 1200px)"
+            srcset="../../assets/images/mujer-armiño-tablet.jpg"
+          />
+          <source
+            media="(min-width: 1201px)"
+            srcset="../../assets/images/mujer-armiño-desktop.jpg"
+          />
+          <img
+            src="../../assets/images/mujer-armiño-desktop.jpg"
+            class="detail-img"
+            alt="El cuadro la Dama del armiño"
+          />
+        </picture>
         <figcaption class="detail-img-caption">La Dama del armiño</figcaption>
       </figure>
       <p>
@@ -89,6 +103,27 @@
         <li>El armiño blanco referencia la pureza de la mujer.</li>
       </ul>
       <a href="../../categories.html">Volver al menú de sus obras</a>
+      <p>En colaboración con:</p>
+      <img
+        srcset="
+          ../../assets/images/logo_aelv_400w.png,
+          ../../assets/images/logo_aelv_600w.png 1.5x,
+          ../../assets/images/logo_aelv_800w.png 2x
+        "
+        src="../../assets/images/logo_aelv_800w.png"
+        class="logo-img"
+        alt="Logo de los Amigos de Europa Leonardo Da Vinci"
+      />
+      <img
+        srcset="
+          ../../assets/images/asodavinci_400w.png,
+          ../../assets/images/asodavinci_600w.png 1.5x,
+          ../../assets/images/asodavinci_800w.png 2x
+        "
+        src="../../assets/images/asodavinci_800w.png"
+        class="logo-img"
+        alt="Logo de Asodavinci"
+      />
     </div>
     <include src="./src/views/detail/detail_footer.html"></include>
   </body>

@@ -23,11 +23,21 @@
         parte de las obras de Arte exhibidas en el Museo del Louvre.
       </p>
       <figure class="detail-figure">
-        <img
-          src="../../assets/images/mona-lisa.jpg"
-          class="detail-img"
-          alt="La Mona Lisa"
-        />
+        <picture>
+          <source
+            media="(max-width: 768px)"
+            srcset="../../assets/images/mona-lisa-mobile.jpg"
+          />
+          <source
+            media="(min-width: 769px)"
+            srcset="../../assets/images/mona-lisa-desktop.jpg"
+          />
+          <img
+            src="../../assets/images/mona-lisa-desktop.jpg"
+            class="detail-img"
+            alt="El cuadro Mona Lisa"
+          />
+        </picture>
         <figcaption class="detail-img-caption">La Mona Lisa</figcaption>
       </figure>
       <p>
@@ -79,6 +89,27 @@
         <li>El misterio envuelve a esta obra por su dudoso origen.</li>
       </ul>
       <a href="../../categories.html">Volver al menú de sus obras</a>
+      <p>En colaboración con:</p>
+      <img
+        srcset="
+          ../../assets/images/logo_aelv_400w.png,
+          ../../assets/images/logo_aelv_600w.png 1.5x,
+          ../../assets/images/logo_aelv_800w.png 2x
+        "
+        src="../../assets/images/logo_aelv_800w.png"
+        class="logo-img"
+        alt="Logo de los Amigos de Europa Leonardo Da Vinci"
+      />
+      <img
+        srcset="
+          ../../assets/images/asodavinci_400w.png,
+          ../../assets/images/asodavinci_600w.png 1.5x,
+          ../../assets/images/asodavinci_800w.png 2x
+        "
+        src="../../assets/images/asodavinci_800w.png"
+        class="logo-img"
+        alt="Logo de Asodavinci"
+      />
     </div>
     <include src="./src/views/detail/detail_footer.html"></include>
   </body>

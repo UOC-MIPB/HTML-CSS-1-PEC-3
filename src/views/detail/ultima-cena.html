@@ -23,11 +23,25 @@
         Jesús y sus discípulos.
       </p>
       <figure class="detail-figure">
-        <img
-          src="../../assets/images/ultima-cena.jpg"
-          class="detail-img"
-          alt="La última cena"
-        />
+        <picture>
+          <source
+            media="(max-width: 768px)"
+            srcset="../../assets/images/ultima-cena-mobile.jpg"
+          />
+          <source
+            media="(min-width: 769px) and (max-width: 1200px)"
+            srcset="../../assets/images/ultima-cena-tablet.jpg"
+          />
+          <source
+            media="(min-width: 1201px)"
+            srcset="../../assets/images/ultima-cena-desktop.jpg"
+          />
+          <img
+            src="../../assets/images/ultima-cena-desktop.jpg"
+            class="detail-img"
+            alt="El cuadro La Última Cena"
+          />
+        </picture>
         <figcaption class="detail-img-caption">La última cena</figcaption>
       </figure>
       <p>
@@ -78,6 +92,27 @@
         <li>Es admirada por artistas alrededor del mundo.</li>
       </ul>
       <a href="../../categories.html">Volver al menú de sus obras</a>
+      <p>En colaboración con:</p>
+      <img
+        srcset="
+          ../../assets/images/logo_aelv_400w.png,
+          ../../assets/images/logo_aelv_600w.png 1.5x,
+          ../../assets/images/logo_aelv_800w.png 2x
+        "
+        src="../../assets/images/logo_aelv_800w.png"
+        class="logo-img"
+        alt="Logo de los Amigos de Europa Leonardo Da Vinci"
+      />
+      <img
+        srcset="
+          ../../assets/images/asodavinci_400w.png,
+          ../../assets/images/asodavinci_600w.png 1.5x,
+          ../../assets/images/asodavinci_800w.png 2x
+        "
+        src="../../assets/images/asodavinci_800w.png"
+        class="logo-img"
+        alt="Logo de Asodavinci"
+      />
     </div>
     <include src="./src/views/detail/detail_footer.html"></include>
   </body>

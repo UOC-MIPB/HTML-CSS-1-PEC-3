@@ -16,7 +16,6 @@
     <include src="./src/views/detail/detail_header.html"></include>
     <div class="detail-body">
       <h1>Salvator Mundi</h1>
-
       <p>
         Salvator Mundi es una pintura de Cristo como Salvator Mundi («Cristo
         como salvador del mundo») atribuida a Leonardo da Vinci, datada en torno
@@ -32,11 +31,25 @@
         preparatorios con tiza y tinta de Leonardo.
       </p>
       <figure class="detail-figure">
-        <img
-          src="../../assets/images/salvator-mundi.jpg"
-          class="detail-img"
-          alt="Salvator Mundi"
-        />
+        <picture>
+          <source
+            media="(max-width: 768px)"
+            srcset="../../assets/images/salvator-mundi-mobile.jpg"
+          />
+          <source
+            media="(min-width: 769px) and (max-width: 1200px)"
+            srcset="../../assets/images/salvator-mundi-tablet.jpg"
+          />
+          <source
+            media="(min-width: 1201px)"
+            srcset="../../assets/images/salvator-mundi-desktop.jpg"
+          />
+          <img
+            src="../../assets/images/salvator-mundi-desktop.jpg"
+            class="detail-img"
+            alt="El cuadro Salvator Mundi"
+          />
+        </picture>
         <figcaption class="detail-img-caption">Salvator Mundi</figcaption>
       </figure>
       <p>
@@ -78,6 +91,27 @@
         <li>Contiene muchas trazas del estilo de Leonardo.</li>
       </ul>
       <a href="../../categories.html">Volver al menú de sus obras</a>
+      <p>En colaboración con:</p>
+      <img
+        srcset="
+          ../../assets/images/logo_aelv_400w.png,
+          ../../assets/images/logo_aelv_600w.png 1.5x,
+          ../../assets/images/logo_aelv_800w.png 2x
+        "
+        src="../../assets/images/logo_aelv_800w.png"
+        class="logo-img"
+        alt="Logo de los Amigos de Europa Leonardo Da Vinci"
+      />
+      <img
+        srcset="
+          ../../assets/images/asodavinci_400w.png,
+          ../../assets/images/asodavinci_600w.png 1.5x,
+          ../../assets/images/asodavinci_800w.png 2x
+        "
+        src="../../assets/images/asodavinci_800w.png"
+        class="logo-img"
+        alt="Logo de Asodavinci"
+      />
     </div>
     <include src="./src/views/detail/detail_footer.html"></include>
   </body>

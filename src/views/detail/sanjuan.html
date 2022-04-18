@@ -29,11 +29,25 @@
         Lisa, entonces ¿Cuánto lo es la de este San Juan Bautista?
       </p>
       <figure class="detail-figure">
-        <img
-          src="../../assets/images/san-juan-bautista.jpg"
-          class="detail-img"
-          alt="San Juan Bautista"
-        />
+        <picture>
+          <source
+            media="(max-width: 768px)"
+            srcset="../../assets/images/san-juan-bautista-mobile.jpg"
+          />
+          <source
+            media="(min-width: 769px) and (max-width: 1200px)"
+            srcset="../../assets/images/san-juan-bautista-tablet.jpg"
+          />
+          <source
+            media="(min-width: 1201px)"
+            srcset="../../assets/images/san-juan-bautista-desktop.jpg"
+          />
+          <img
+            src="../../assets/images/san-juan-bautista-desktop.jpg"
+            class="detail-img"
+            alt="El cuadro San Juan Bautista"
+          />
+        </picture>
         <figcaption class="detail-img-caption">San Juan Bautista</figcaption>
       </figure>
       <p>
@@ -97,6 +111,27 @@
         </li>
       </ul>
       <a href="../../categories.html">Volver al menú de sus obras</a>
+      <p>En colaboración con:</p>
+      <img
+        srcset="
+          ../../assets/images/logo_aelv_400w.png,
+          ../../assets/images/logo_aelv_600w.png 1.5x,
+          ../../assets/images/logo_aelv_800w.png 2x
+        "
+        src="../../assets/images/logo_aelv_800w.png"
+        class="logo-img"
+        alt="Logo de los Amigos de Europa Leonardo Da Vinci"
+      />
+      <img
+        srcset="
+          ../../assets/images/asodavinci_400w.png,
+          ../../assets/images/asodavinci_600w.png 1.5x,
+          ../../assets/images/asodavinci_800w.png 2x
+        "
+        src="../../assets/images/asodavinci_800w.png"
+        class="logo-img"
+        alt="Logo de Asodavinci"
+      />
     </div>
     <include src="./src/views/detail/detail_footer.html"></include>
   </body>
