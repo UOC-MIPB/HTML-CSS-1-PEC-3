@@ -8,6 +8,8 @@
   flex-direction: column;
   .categories-link {
     // width: 100%;
+    display: flex;
+    align-items: center;
     margin-top: 10px;
     padding: 15px 30px;
     border-radius: 10px;
@@ -20,6 +22,10 @@
     a {
       text-decoration: none;
       color: #fff;
+
+      @media (max-width: $desktop-min-width) {
+        font-size: 15px;
+      }
     }
 
     a:hover {
@@ -30,4 +36,11 @@
 
 .back-to-menu-categories {
   margin-top: 20px;
+}
+
+.miniature-img {
+  width: 40px;
+  max-height: 40px;
+  padding-left: 20px;
+  object-fit: contain;
 }
