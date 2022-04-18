@@ -14,12 +14,6 @@
 
 .detail-img {
   object-fit: cover;
-  max-width: 200px;
-  max-height: 400px;
-
-  @media (min-width: $desktop-min-width) {
-    max-width: 800px;
-  }
 }
 
 .detail-img-caption {

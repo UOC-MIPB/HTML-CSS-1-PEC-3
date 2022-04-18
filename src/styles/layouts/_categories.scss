@@ -17,7 +17,12 @@
     text-decoration: none;
     font-size: 18px;
 
-    .categories-link:hover {
+    a {
+      text-decoration: none;
+      color: #fff;
+    }
+
+    a:hover {
       cursor: pointer;
     }
   }

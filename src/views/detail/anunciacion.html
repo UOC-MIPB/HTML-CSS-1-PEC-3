@@ -26,11 +26,25 @@
         pintura de la época y, por supuesto, a su tremenda belleza.
       </p>
       <figure class="detail-figure">
-        <img
-          src="../../assets/images/anunciacion.jpg"
-          class="detail-img"
-          alt="La Anunciación"
-        />
+        <picture>
+          <source
+            media="(max-width: 768px)"
+            srcset="../../assets/images/anunciacion-mobile.jpg"
+          />
+          <source
+            media="(min-width: 769px) and (max-width: 1200px)"
+            srcset="../../assets/images/anunciacion-tablet.jpg"
+          />
+          <source
+            media="(min-width: 1201px)"
+            srcset="../../assets/images/anunciacion-desktop.jpg"
+          />
+          <img
+            src="../../assets/images/anunciacion-desktop.jpg"
+            class="detail-img"
+            alt="La Anunciación"
+          />
+        </picture>
         <figcaption class="detail-img-caption">La Anunciación</figcaption>
       </figure>
       <p>
