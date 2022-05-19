@@ -8,14 +8,34 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,600;0,800;1,400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-      rel="stylesheet"
+      rel="preload"
+      as="style"
     />
     <title>Quién era Da Vinci</title>
   </head>
   <body>
     <include src="./src/header.html"></include>
     <div class="presentation-body">
-      <img class="presentation-image" src="./assets/images/davinci.jpg" />
+      <picture>
+        <source
+          media="(max-width: 768px)"
+          srcset="./assets/images/davinci-mobile.webp"
+        />
+        <source
+          media="(min-width: 769px) and (max-width: 1200px)"
+          srcset="./assets/images/davinci-tablet.webp"
+        />
+        <source
+          media="(min-width: 1201px)"
+          srcset="./assets/images/davinci-desktop.webp"
+        />
+        <img
+          src="./assets/images/davinci-desktop.webp"
+          class="presentation-image"
+          alt="Retrato de Da Vinci"
+        />
+      </picture>
+      <!-- <img class="presentation-image" src="./assets/images/davinci.jpg" /> -->
       <h1 class="presentation-header">¿Quién era Leonardo Da Vinci?</h1>
       <h2 class="presentation-header">Nacimiento y primeros años</h2>
       <p class="presentation-text">
