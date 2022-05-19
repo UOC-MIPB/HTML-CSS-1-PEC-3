@@ -20,8 +20,6 @@
         alt="La última cena de Da Vinci"
       />
     </picture>
-    <!-- <img
-  src="./assets/images/ultima-cena.wepb" class="header__img" /> -->
     <div class="header__text">
       <h1 class="header__text--title" id="title">Leonardo Da Vinci</h1>
       <p class="header__text--subtitle" id="subtitle">
@@ -53,10 +51,25 @@
   <nav class="nav">
     <a class="nav-link" href="./presentation.html">
       <div class="navigation-block">
-        <img
-          src="./assets/images/collage-da-vinci.jpg"
-          class="navigation-block__img"
-        />
+        <picture>
+          <source
+            media="(max-width: 768px)"
+            srcset="./assets/images/collage-da-vinci-mobile.webp"
+          />
+          <source
+            media="(min-width: 769px) and (max-width: 1200px)"
+            srcset="./assets/images/collage-da-vinci-tablet.webp"
+          />
+          <source
+            media="(min-width: 1201px)"
+            srcset="./assets/images/collage-da-vinci-desktop.webp"
+          />
+          <img
+            src="./assets/images/collage-da-vinci.webp"
+            class="navigation-block__img"
+            alt="Collage de Da Vinci y sus obras"
+          />
+        </picture>
         <div class="navigation-block__title">
           <p class="navigation-block__title--text">¿Quién era Da Vinci?</p>
         </div>
@@ -64,10 +77,25 @@
     </a>
     <a class="nav-link" href="./categories.html">
       <div class="navigation-block">
-        <img
-          src="./assets/images/drawings-davinci.jpg"
-          class="navigation-block__img"
-        />
+        <picture>
+          <source
+            media="(max-width: 768px)"
+            srcset="./assets/images/drawings-davinci-mobile.webp"
+          />
+          <source
+            media="(min-width: 769px) and (max-width: 1200px)"
+            srcset="./assets/images/drawings-davinci-tablet.webp"
+          />
+          <source
+            media="(min-width: 1201px)"
+            srcset="./assets/images/drawings-davinci-desktop.webp"
+          />
+          <img
+            src="./assets/images/drawings-davinci-desktop.webp"
+            class="navigation-block__img"
+            alt="Collage de Da Vinci y sus obras"
+          />
+        </picture>
         <div class="navigation-block__title">
           <p class="navigation-block__title--text">Conoce su obra</p>
         </div>
@@ -75,10 +103,25 @@
     </a>
     <a class="nav-link" href="./bibliography.html">
       <div class="navigation-block">
-        <img
-          src="./assets/images/bibliography.jpg"
-          class="navigation-block__img"
-        />
+        <picture>
+          <source
+            media="(max-width: 768px)"
+            srcset="./assets/images/bibliography-mobile.webp"
+          />
+          <source
+            media="(min-width: 769px) and (max-width: 1200px)"
+            srcset="./assets/images/bibliography-tablet.webp"
+          />
+          <source
+            media="(min-width: 1201px)"
+            srcset="./assets/images/bibliography-desktop.webp"
+          />
+          <img
+            src="./assets/images/bibliography-desktop.webp"
+            class="navigation-block__img"
+            alt="Libro de Da Vinci"
+          />
+        </picture>
         <div class="navigation-block__title">
           <p class="navigation-block__title--text">Bibliografía</p>
         </div>
