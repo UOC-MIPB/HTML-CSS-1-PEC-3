@@ -1,7 +1,27 @@
 <include src="./src/header.html"></include>
 <div class="home">
   <div>
-    <img src="./assets/images/ultima-cena.jpg" class="header__img" />
+    <picture>
+      <source
+        media="(max-width: 768px)"
+        srcset="./assets/images/ultima-cena-mobile.webp"
+      />
+      <source
+        media="(min-width: 769px) and (max-width: 1200px)"
+        srcset="./assets/images/ultima-cena-tablet.webp"
+      />
+      <source
+        media="(min-width: 1201px)"
+        srcset="./assets/images/ultima-cena-desktop.webp"
+      />
+      <img
+        src="./assets/images/ultima-cena.webp"
+        class="header__img"
+        alt="La última cena de Da Vinci"
+      />
+    </picture>
+    <!-- <img
+  src="./assets/images/ultima-cena.wepb" class="header__img" /> -->
     <div class="header__text">
       <h1 class="header__text--title" id="title">Leonardo Da Vinci</h1>
       <p class="header__text--subtitle" id="subtitle">
